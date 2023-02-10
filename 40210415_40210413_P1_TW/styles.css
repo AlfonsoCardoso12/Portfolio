@@ -1,0 +1,80 @@
+body {
+  background: linear-gradient(180deg, rgba(89, 76, 238, 1) 0%, #8dd0f5 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.container {
+
+
+  text-align: center;
+  background-color: #5c54ed;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 2rem;
+  color: #fdfdfd;
+  border-radius: 1rem;
+
+
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+#weather {
+  
+  padding: 8px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+
+}
+
+
+
+#buscar {
+  padding: 5px;
+  border-radius: 10px;
+
+}
+
+#geolocation-button {
+  padding: 5px;
+  border-radius: 10px;
+
+}
+
+#location-input {
+  padding: 5px;
+  border-radius: 10px;
+
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+#get-location-temp {
+  padding: 5px;
+  border-radius: 10px;
+
+}
+
+#voltar1 {
+  padding: 5px;
+  border-radius: 10px;
+  position: absolute;
+  top: -5;
+  left: 130px;
+  background-color: #000000;
+}
+
+a.btn:hover {
+  background-color: blue;
+  color: white;
+}

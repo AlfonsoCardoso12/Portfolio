@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <section class="bg-primary">
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1 class="display-4 animated bounceInDown">Bem-vindo ao nosso site sobre Clima e Tempo!</h1>
+        <p class="lead animated bounceInUp">Acompanhe as condições climáticas da sua localização ou de qualquer outra
+          cidade.</p>
+      </div>
+      <div class="text-center">
+        <a href="mapa.html" class="btn btn-light btn-lg animated pulse" role="button">Abrir Mapa</a>
+        <br>
+        <br>
+        <a href="climaetempo.html" class="btn btn-light btn-lg animated pulse" role="button">Ir para a página de Clima e
+          Tempo</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    if ('speechSynthesis' in window) {
+      let synth = window.speechSynthesis;
+      let voiceOptions = synth.getVoices();
+
+      function speak(text) {
+        let utterance = new SpeechSynthesisUtterance(text);
+        utterance.voice = voiceOptions.filter(function (voice) { return voice.name == 'Google BR Portuguse'; })[0];
+        utterance.pitch = 1.5;
+        utterance.rate = 0.8;
+        synth.speak(utterance);
+      }
+
+      speak("BEM-VINDO AO NOSSO SITE SOBRE CLIMA E TEMPO");
+    } else {
+      console.log("Seu navegador não oferece suporte à Web Speech API.");
+    }
+  </script>
+</body>
+
+</html>

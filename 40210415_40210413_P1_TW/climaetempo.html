@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://kit.fontawesome.com/8646b3e0f6.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+ 
+  <div id="map" class="map"></div>
+
+  <div class="container">
+<br>
+    <h1 class="text-center" id="nn" style="color: whitesmoke; font-weight: bold;">Clima e Tempo</h1>
+    <p class="text-center" style="color: whitesmoke;">Acompanhe as condições climáticas da sua localização ou de
+      qualquer outra cidade.</p>
+    <button id="geolocation-button" class="btn btn-secondary"> Informações climáticas da localização exata</button>
+    <br>
+    <br>
+    <label for="location-input" style="font-weight: bold; color: whitesmoke;">Informe sua localização:</label>
+
+    <button id="voltar1" class="btn btn-secondary" onclick=goBack()>
+      <i class="fas fa-arrow-left"></i> Voltar
+    </button>
+
+    <br>
+
+    <form id="location-form">
+      <br>
+      <br>
+      <input type="text" class="form-control" id="location-input" name="location-input">
+      <br>
+      <button id="buscar" type="submit" class="btn btn-primary">Buscar</button>
+
+    </form>
+    <br>
+    <div id="weather" style="color: black; font-weight:500;">Caso exista uma cidade com o mesmo nome em diferentes
+      países, digite ",Sigla do país".</div>
+    <br>
+    <div id="humidity"></div>
+    <div id="wind"></div>
+    <div id="city"></div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
